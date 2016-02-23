@@ -4,21 +4,21 @@
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
  */
- 	/* AGENT_SHEET */
-	.main-content {
-	    margin-top: 50px;
-	}
+  /* AGENT_SHEET */
+  .main-content {
+    margin-top: 50px;
+  }
 
-	.discussion-sidebar {
-    	top: 50px;                                        
-	}
+  .discussion-sidebar {
+    top: 50px;
+  }
 
-	.header.header-logged-in {
-	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    width: 100%;
-	    z-index: 1000;
-	}
+  .header.header-logged-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 }
