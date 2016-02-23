@@ -9,6 +9,10 @@
 	    margin-top: 50px;
 	}
 
+	.discussion-sidebar {
+    	top: 50px;                                        
+	}
+
 	.header.header-logged-in {
 	    position: fixed;
 	    top: 0;
