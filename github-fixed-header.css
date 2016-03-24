@@ -12,6 +12,14 @@
   .discussion-sidebar.is-stuck {
     padding-top: 50px;
   }
+  
+  #js-flash-container + .main-content {
+    margin-top: 0px !important;
+  }
+
+  #js-flash-container {
+    padding-top: 50px;
+  }
 
   .header.header-logged-in {
     position: fixed;
