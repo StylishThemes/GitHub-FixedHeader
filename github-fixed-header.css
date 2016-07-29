@@ -1,5 +1,5 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.0 (7/29/2016) *//*
+/*! Github Fixed Header Theme v1.1.1 (7/29/2016) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -27,7 +27,7 @@
   }
   a.anchor svg,
   a.anchor span {
-    pointer-events: all;
+    pointer-events: all !important;
   }
   /* blog (Firefox only sticky) */
   div.blog-aside {
