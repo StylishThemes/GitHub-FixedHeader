@@ -13,7 +13,7 @@
   /* move loading bar into view */
   .pjax-loader-bar,
   .pjax-loader-bar .progress {
-    top: 50px;
+    z-index: 1001 !important;
   }
   /* move anchors below fixed header */
   .accessibility-aid,
