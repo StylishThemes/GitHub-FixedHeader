@@ -1,5 +1,5 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.5 (9/16/2016) *//*
+/*! Github Fixed Header Theme v1.1.6 (10/2/2016) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -7,10 +7,12 @@
   /* AGENT_SHEET */
   body:not(.project-full-screen),
   /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
-  .is-stuck,
+  .is-stuck {
+    padding-top: 50px !important;
+  }
   /* user page bar now appears under fixed header */
   .user-profile-sticky-bar:after {
-    padding-top: 50px !important;
+    top: 50px !important;
   }
   /* move loading bar into view */
   .pjax-loader-bar,
