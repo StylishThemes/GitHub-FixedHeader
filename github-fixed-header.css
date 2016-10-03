@@ -1,5 +1,5 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.6 (10/2/2016) *//*
+/*! Github Fixed Header Theme v1.1.7 (10/3/2016) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -65,5 +65,10 @@
     right: 0 !important;
     width: 100% !important;
     z-index: 1000 !important;
+  }
+
+  /* Octotree side panel open - see #6 */
+  .octotree-show .header .container {
+    margin-left: auto !important;
   }
 }
