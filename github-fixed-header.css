@@ -1,5 +1,5 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.9 (2/13/2017) *//*
+/*! Github Fixed Header Theme v1.1.10 (2/13/2017) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -57,8 +57,8 @@
   body.logged-in .header,
   /* .site-header = not-logged-in */
   .site-header,
-  /* #header-wrapper = help.github.com */
-  #header-wrapper {
+  /* #com #header = help.github.com */
+  #com #header {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
