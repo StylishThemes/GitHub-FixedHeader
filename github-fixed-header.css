@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$") {
+@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
 /*! Github Fixed Header Theme v1.1.11 (6/3/2017) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
