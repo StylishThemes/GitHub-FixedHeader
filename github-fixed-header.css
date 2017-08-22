@@ -55,7 +55,7 @@
 
   /* .header = logged-in */
   body.logged-in .header,
-  /* .site-header = not-logged-in */
+  /* .site-header = not-logged-in (removed 22 Aug 2017) */
   .site-header,
   /* .Header = (changed from .header) both logged in and not,
    * added on 22 Aug 2017
