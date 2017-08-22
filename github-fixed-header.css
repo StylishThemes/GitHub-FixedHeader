@@ -57,6 +57,10 @@
   body.logged-in .header,
   /* .site-header = not-logged-in */
   .site-header,
+  /* .Header = (changed from .header) both logged in and not,
+   * added on 22 Aug 2017
+   */
+  .Header,
   /* #com #header = help.github.com */
   #com #header {
     position: fixed !important;
@@ -76,7 +80,8 @@
   }
 
   /* Octotree side panel open - see #6 */
-  .octotree-show .header .container {
+  .octotree-show .header .container,
+  .octotree-show .Header .container {
     margin-left: auto !important;
   }
 }
