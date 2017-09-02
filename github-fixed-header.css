@@ -30,9 +30,6 @@
       height: 42px !important;
       z-index: 1 !important;
     }
-    #diff-0 .file-header {
-      top: 60px !important;
-    }
   }
   /* user page bar now appears under fixed header */
   .user-profile-sticky-bar:after, .discussion-sidebar {
