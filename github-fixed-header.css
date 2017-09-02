@@ -10,6 +10,27 @@
   .is-stuck {
     padding-top: 50px !important;
   }
+  /* pull request toolbar */
+  .pr-toolbar.is-stuck {
+    padding-top: 55px !important;
+  }
+  div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
+    background: #fff;
+    top: 55px !important;
+    height: 40px !important;
+    border-bottom: 1px solid #ddd;
+  }
+  /* make diff file header sticky under the toolbar & main header;
+   * modified from Refined GitHub extension */
+  .pull-request-tab-content .diff-view .file-header {
+    position: sticky !important;
+    top: 95px !important;
+    height: 42px !important;
+    z-index: 1 !important;
+  }
+  #diff-0 .file-header {
+    top: 60px !important;
+  }
   /* user page bar now appears under fixed header */
   .user-profile-sticky-bar:after, .discussion-sidebar {
     top: 49px !important;
