@@ -27,8 +27,8 @@
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 95px !important;
-      height: 42px !important;
-      z-index: 1 !important;
+      height: 40px !important;
+      z-index: 6 !important;
     }
   }
   /* user page bar now appears under fixed header */
