@@ -20,6 +20,9 @@
     height: 40px !important;
     border-bottom: 1px solid #ddd;
   }
+  .diffbar {
+    padding-top: 10px !imporant;
+  }
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
