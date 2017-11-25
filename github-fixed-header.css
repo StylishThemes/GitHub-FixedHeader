@@ -17,7 +17,7 @@
   div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
     background: #fff;
     top: 55px !important;
-    height: 40px !important;
+    height: 60px !important;
     border-bottom: 1px solid #ddd;
   }
   /* make diff file header sticky under the toolbar & main header;
