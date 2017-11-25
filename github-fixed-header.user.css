@@ -1,0 +1,148 @@
+/* ==UserStyle==
+@name        GitHub Fixed Header
+@version     1.1.16
+@description Add a pinned header on GitHub
+@namespace   github.com/StylishThemes
+@author      StylishThemes <https://github.com/StylishThemes>
+@homepageURL https://github.com/StylishThemes/GitHub-FixedHeader
+@supportURL  https://github.com/StylishThemes/GitHub-FixedHeader/issues
+@license     CC-BY-SA-4.0
+==/UserStyle== */
+/* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
+@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
+/*! Github Fixed Header Theme v1.1.16 (10/11/2017) *//*
+ * https://github.com/StylishThemes/GitHub-FixedHeader
+ * https://userstyles.org/styles/124438
+ * License: https://creativecommons.org/licenses/by-sa/4.0/
+ */
+  /* AGENT_SHEET */
+  body:not(.project-full-screen),
+  /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
+  .is-stuck {
+    padding-top: 50px !important;
+  }
+  /* pull request toolbar */
+  .pr-toolbar.is-stuck {
+    padding-top: 55px !important;
+  }
+  div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
+    background: #fff;
+    top: 55px !important;
+    height: 40px !important;
+    border-bottom: 1px solid #ddd;
+  }
+  .diffbar {
+    padding-top: 10px !important;
+  }
+  /* Fix long file name wrapping */
+  .diff-view .file-info a {
+    text-overflow: ellipsis;
+    max-width: 490px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  }
+  /* Adding a gap above the diff blocks fixes a lot of problems */
+  .js-diff-progressive-container:before {
+    content: "";
+    display: block;
+    height: 50px;
+  }
+  /* GitHub-diff-files-filter adds a block, so no need for the gap here */
+  .gdf-filter-wrapper + js-diff-progressive-container:before {
+    height: 0 !important;
+  }
+  /* Fix breaking floats */
+  .file-header:before {
+    clear: both;
+  }
+  /* Fixes other misalignment of headers */
+  .diff-view .file-info span.diffstat {
+    top: -10px !important;
+  }
+  /* make diff file header sticky under the toolbar & main header;
+   * modified from Refined GitHub extension */
+  @supports (position: sticky) {
+    .pull-request-tab-content .diff-view .file-header {
+      position: sticky !important;
+      position: -webkit-sticky !important;
+      top: 95px !important;
+      height: 40px !important;
+      z-index: 6 !important;
+    }
+  }
+  /* user page bar now appears under fixed header */
+  .user-profile-sticky-bar:after, .discussion-sidebar {
+    top: 49px !important;
+  }
+  /* move loading bar into view */
+  .pjax-loader-bar,
+  .pjax-loader-bar .progress {
+    z-index: 1001 !important;
+  }
+  /* move anchors below fixed header */
+  .accessibility-aid,
+  a.anchor {
+    padding-top: 50px !important;
+    margin-top: -50px !important;
+    pointer-events: none;
+    /* anchors on help.github.com */
+    min-width: 5px !important;
+    display: inline-block !important;
+  }
+  a.anchor svg,
+  /* spans used on help.github.com */
+  a.anchor span {
+    pointer-events: all !important;
+    min-width: 20px !important;
+  }
+  /* blog (Firefox only sticky) */
+  div.blog-aside {
+    top: 60px !important;
+  }
+  /* make personal, blog, explore, etc match logged in height */
+  .site-header {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  /* page indicator on personal, open source, business & explore pages */
+  .site-header-nav-main .nav-item:after {
+    bottom: -10px !important;
+  }
+  /* .main-content? */
+  #js-flash-container + .main-content {
+    margin-top: 0px !important;
+  }
+
+  /* .header = logged-in */
+  body.logged-in .header,
+  /* .site-header = not-logged-in (removed 22 Aug 2017) */
+  .site-header,
+  /* .Header = (changed from .header) both logged in and not,
+   * added on 22 Aug 2017
+   */
+  .Header,
+  /* #com #header = help.github.com */
+  #com #header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+
+  /*
+   * GitHub Notifications Dropdown userscript tweak
+   * https://openuserjs.org/scripts/joeytwiddle/Github_Notifications_Dropdown
+   */
+  .notifications-dropdown {
+    z-index: 1001 !important;
+  }
+
+  /* Octotree side panel open - see #6 */
+  .octotree-show .header .container,
+  .octotree-show .Header .container {
+    margin-left: auto !important;
+  }
+}
