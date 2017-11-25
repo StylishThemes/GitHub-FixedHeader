@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.1.16
+@version     1.1.17
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.16 (10/11/2017) *//*
+/*! Github Fixed Header Theme v1.1.17 (2017-11-25) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
