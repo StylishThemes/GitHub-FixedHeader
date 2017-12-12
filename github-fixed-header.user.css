@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.1.18
+@version     1.1.19
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.18 (2017-12-05) *//*
+/*! Github Fixed Header Theme v1.1.19 (2017-12-12) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -43,7 +43,7 @@
     display: inline-block;
   }
   /* Adding a gap above the diff blocks fixes a lot of problems */
-  .js-diff-progressive-container:before {
+  .js-diff-progressive-container:first-child:before {
     content: "";
     display: block;
     height: 50px;
@@ -63,7 +63,7 @@
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
-    .pull-request-tab-content .diff-view .file-header {
+    #files_bucket.pull-request-tab-content .diff-view .file-header {
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 95px !important;
