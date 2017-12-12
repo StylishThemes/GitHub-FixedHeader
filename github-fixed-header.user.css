@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.1.19
+@version     1.1.20
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.19 (2017-12-12) *//*
+/*! Github Fixed Header Theme v1.1.20 (2017-12-12) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -21,18 +21,11 @@
   .is-stuck {
     padding-top: 50px !important;
   }
-  /* pull request toolbar */
-  .pr-toolbar.is-stuck {
-    padding-top: 55px !important;
-  }
   div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
     background: #fff;
     top: 55px !important;
     height: 40px !important;
     border-bottom: 1px solid #ddd;
-  }
-  .diffbar {
-    padding-top: 10px !important;
   }
   /* Fix long file name wrapping */
   .diff-view .file-info a {
@@ -42,16 +35,6 @@
     overflow: hidden;
     display: inline-block;
   }
-  /* Adding a gap above the diff blocks fixes a lot of problems */
-  .js-diff-progressive-container:first-child:before {
-    content: "";
-    display: block;
-    height: 50px;
-  }
-  /* GitHub-diff-files-filter adds a block, so no need for the gap here */
-  .gdf-filter-wrapper + .js-diff-progressive-container:before {
-    height: 0 !important;
-  }
   /* Fix breaking floats */
   .file-header:before {
     clear: both;
@@ -59,6 +42,26 @@
   /* Fixes other misalignment of headers */
   .diff-view .file-info span.diffstat {
     top: -10px !important;
+  }
+  div.is-stuck .diffbar {
+    margin-top: 6px !important;
+  }
+  .diff-view .file-header {
+    height: 40px !important;
+  }
+  .diff-view .file-info {
+    position: absolute;
+    top: 4px !important;
+  }
+  .diff-view .file-actions {
+    position: absolute;
+    top: 5px !important;
+    right: 0 !important;
+  }
+  /* Override GitHub-Dark settings */
+  div.diffbar {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
