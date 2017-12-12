@@ -32,7 +32,7 @@
     display: inline-block;
   }
   /* Adding a gap above the diff blocks fixes a lot of problems */
-  .js-diff-progressive-container:before {
+  .js-diff-progressive-container:first-child:before {
     content: "";
     display: block;
     height: 50px;
