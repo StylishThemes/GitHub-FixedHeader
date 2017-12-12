@@ -52,7 +52,7 @@
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
-    .pull-request-tab-content .diff-view .file-header {
+    #files_bucket.pull-request-tab-content .diff-view .file-header {
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 95px !important;
