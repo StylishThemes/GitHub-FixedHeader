@@ -5,15 +5,22 @@ const fs = require("fs");
 
 function createUserCss(version) {
 	return Promise.all(
-			["./build/template.user.css", "./github-fixed-header.css"].map(name => readFile(name))
+			["./build/template.user.css", "./github-fixed-header.css"]
+				.map(name => readFile(name))
 		)
-		.then(files => writeFile(
-			"github-fixed-header.user.css", processTemplate(files, version))
-		);
+		.then(files => updateFiles(files, version))
 }
 
-function processTemplate(files, version) {
-	return files.join("").replace("[[VERSION]]", version);
+function updateFiles(files, version) {
+	const date = (new Date()).toISOString().substring(0, 10),
+		// update v00.00.00 (0000-00-00)
+		mainStyle = files[1].replace(
+			/v([\d.]+){3} \([\d-]+\)/,
+			`v${version} (${date})`
+		),
+		usercss = (files[0] + mainStyle).replace("[[VERSION]]", version);
+	writeFile("github-fixed-header.user.css", usercss);
+	writeFile("github-fixed-header.css", mainStyle);
 }
 
 function readFile(name) {
