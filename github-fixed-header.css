@@ -64,8 +64,9 @@
     }
   }
   /* user page bar now appears under fixed header */
-  .user-profile-sticky-bar:after, .discussion-sidebar {
-    top: 49px !important;
+  .user-profile-sticky-bar:after,
+  div.discussion-sidebar {
+    top: 55px !important;
   }
   /* move loading bar into view */
   .pjax-loader-bar,
