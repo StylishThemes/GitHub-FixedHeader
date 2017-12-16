@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.1.21
+@version     1.1.22
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.21 (2017-12-15) *//*
+/*! Github Fixed Header Theme v1.1.22 (2017-12-16) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -76,8 +76,9 @@
   }
   /* user page bar now appears under fixed header */
   .user-profile-sticky-bar:after,
-  div.discussion-sidebar {
-    top: 55px !important;
+  div.discussion-sidebar,
+  div.blog-aside {
+    top: 60px !important;
   }
   /* move loading bar into view */
   .pjax-loader-bar,
@@ -87,8 +88,8 @@
   /* move anchors below fixed header */
   .accessibility-aid,
   a.anchor {
-    padding-top: 50px !important;
-    margin-top: -50px !important;
+    padding-top: 55px !important;
+    margin-top: -55px !important;
     pointer-events: none;
     /* anchors on help.github.com */
     min-width: 5px !important;
@@ -99,10 +100,6 @@
   a.anchor span {
     pointer-events: all !important;
     min-width: 20px !important;
-  }
-  /* blog (Firefox only sticky) */
-  div.blog-aside {
-    top: 60px !important;
   }
   /* make personal, blog, explore, etc match logged in height */
   .site-header {
