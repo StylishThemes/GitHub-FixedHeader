@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.1.22
+@version     1.1.23
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.22 (2017-12-16) *//*
+/*! Github Fixed Header Theme v1.1.23 (2017-12-17) *//*
  * https://github.com/StylishThemes/GitHub-FixedHeader
  * https://userstyles.org/styles/124438
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -44,7 +44,7 @@
     top: -10px !important;
   }
   div.is-stuck .diffbar {
-    margin-top: 6px !important;
+    margin-top: -5px !important;
   }
   .diff-view .file-header {
     height: 40px !important;
@@ -66,7 +66,7 @@
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
-    #files_bucket.pull-request-tab-content .diff-view .file-header {
+    #files .file-header {
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 95px !important;
@@ -78,6 +78,9 @@
   .user-profile-sticky-bar:after,
   div.discussion-sidebar,
   div.blog-aside {
+    top: 60px !important;
+  }
+  #toc + #files .file-header {
     top: 60px !important;
   }
   /* move loading bar into view */
