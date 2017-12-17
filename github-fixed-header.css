@@ -55,7 +55,7 @@
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
-    #files_bucket.pull-request-tab-content .diff-view .file-header {
+    #files .file-header {
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 95px !important;
@@ -67,6 +67,9 @@
   .user-profile-sticky-bar:after,
   div.discussion-sidebar,
   div.blog-aside {
+    top: 60px !important;
+  }
+  #toc + #files .file-header {
     top: 60px !important;
   }
   /* move loading bar into view */
