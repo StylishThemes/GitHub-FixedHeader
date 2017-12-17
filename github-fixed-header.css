@@ -70,7 +70,7 @@
     top: 60px !important;
   }
   #toc + #files .file-header {
-    top: 60px !important;
+    top: 56px !important;
   }
   /* move loading bar into view */
   .pjax-loader-bar,
