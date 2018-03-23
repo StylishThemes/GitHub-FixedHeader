@@ -2,8 +2,5 @@
 	"name": "github-fixedheader",
 	"version": "1.1.24",
 	"description": "Add a pinned header on GitHub",
-	"license": "CC-BY-SA-4.0",
-	"scripts": {
-		"build": "node build/build.js"
-	}
+	"license": "CC-BY-SA-4.0"
 }

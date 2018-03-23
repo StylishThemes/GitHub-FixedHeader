@@ -8,22 +8,19 @@
 @supportURL  https://github.com/StylishThemes/GitHub-FixedHeader/issues
 @license     CC-BY-SA-4.0
 ==/UserStyle== */
-/* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Fixed Header Theme v1.1.24 (2017-12-17) *//*
- * https://github.com/StylishThemes/GitHub-FixedHeader
- * https://userstyles.org/styles/124438
- * License: https://creativecommons.org/licenses/by-sa/4.0/
- */
   /* AGENT_SHEET */
+  :root {
+  	--height: 57px;
+  }
   body:not(.project-full-screen),
   /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
   .is-stuck {
-    padding-top: 50px !important;
+    padding-top: var(--height) !important;
   }
   div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
     background: #fff;
-    top: 55px !important;
+    top: var(--height) !important;
     height: 40px !important;
     border-bottom: 1px solid #ddd;
   }
@@ -41,10 +38,10 @@
   }
   /* Fixes other misalignment of headers */
   .diff-view .file-info span.diffstat {
-    top: -10px !important;
+    top: -11px !important;
   }
   div.is-stuck .diffbar {
-    margin-top: -5px !important;
+    margin-top: -12px !important;
   }
   .diff-view .file-header {
     height: 40px !important;
@@ -56,7 +53,7 @@
   .diff-view .file-actions {
     position: absolute;
     top: 5px !important;
-    right: 0 !important;
+    right: 5px !important;
   }
   /* Override GitHub-Dark settings */
   div.diffbar {
@@ -78,10 +75,10 @@
   .user-profile-sticky-bar:after,
   div.discussion-sidebar,
   div.blog-aside {
-    top: 60px !important;
+    top: var(--height) !important;
   }
   #toc + #files .file-header {
-    top: 56px !important;
+    top: var(--height) !important;
   }
   /* move loading bar into view */
   .pjax-loader-bar,
