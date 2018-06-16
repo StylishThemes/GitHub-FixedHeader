@@ -147,3 +147,12 @@
     margin-left: auto !important;
   }
 }
+
+@-moz-document domain("gist.github.com") {
+  /* gists don't have a secondary header */
+  @supports (position: sticky) {
+    #files .file-header {
+      top: var(--height) !important;
+    }
+  }
+}
