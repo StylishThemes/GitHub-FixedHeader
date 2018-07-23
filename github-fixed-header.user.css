@@ -8,7 +8,7 @@
 @supportURL  https://github.com/StylishThemes/GitHub-FixedHeader/issues
 @license     CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
+@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
   /* AGENT_SHEET */
   :root {
   	--height: 57px;
