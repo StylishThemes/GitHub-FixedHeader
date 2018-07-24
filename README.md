@@ -16,6 +16,6 @@ A userstyle extension is required, common ones include:
 
 Then:
 
-📦 [Install the usercss](https://raw.githubusercontent.com/StylishThemes/GitHub-FixedHeader/master/github-fixed-header.user.css). Supports automatic updates.
-📦 [Install from OpenUserCSS](https://openusercss.org/theme/5a514de3d4c8c00b00837103).
+📦 [Install the usercss](https://raw.githubusercontent.com/StylishThemes/GitHub-FixedHeader/master/github-fixed-header.user.css). Supports automatic updates.<br>
+📦 [Install from OpenUserCSS](https://openusercss.org/theme/5a514de3d4c8c00b00837103).<br>
 📦 [Install from userstyles.org](https://userstyles.org/styles/124438). Does not support automatic updates & is NO LONGER UPDATED.
