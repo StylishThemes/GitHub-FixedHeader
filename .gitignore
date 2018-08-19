@@ -13,6 +13,8 @@ tmp/
 
 # Build
 node_modules/
+build.json
+*.build.css
 
 # Windows crap
 Thumbs.db
