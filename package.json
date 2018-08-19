@@ -1,6 +1,31 @@
 {
-	"name": "github-fixedheader",
-	"version": "1.2.3",
-	"description": "Add a pinned header on GitHub",
-	"license": "CC-BY-SA-4.0"
+  "name": "github-fixedheader",
+  "title": "GitHub Fixed Header",
+  "version": "1.2.3",
+  "description": "Add a pinned header on GitHub",
+  "license": "CC-BY-SA-4.0",
+  "main": "github-fixed-header.user.css",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-silverwind": "^2.0.2",
+    "fs-extra": "^7.0.0",
+    "perfectionist": "^2.4.0",
+    "semver": "^5.5.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0",
+    "updates": "^4.1.2"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "eslint": "eslint --quiet --color tools/*.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "major": "node tools/bump-version.js major && git add . && npm version -f major",
+    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
+    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
+    "perfectionist": "perfectionist github-fixed-header.user.css github-fixed-header.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "stylelint --silent --color -- github-fixed-header.user.css",
+    "test": "npm run eslint && npm run stylelint",
+    "update": "updates -cu && npm install"
+  }
 }
