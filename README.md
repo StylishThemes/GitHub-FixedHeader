@@ -17,5 +17,15 @@ A userstyle extension is required, common ones include:
 Then:
 
 📦 [Install the usercss](https://raw.githubusercontent.com/StylishThemes/GitHub-FixedHeader/master/github-fixed-header.user.css). Supports automatic updates.<br>
-📦 [Install from OpenUserCSS](https://openusercss.org/theme/5a514de3d4c8c00b00837103).<br>
-📦 [Install from userstyles.org](https://userstyles.org/styles/124438). Does not support automatic updates & is NO LONGER UPDATED.
+📦 [Install from OpenUserCSS](https://openusercss.org/theme/5a514de3d4c8c00b00837103).
+
+## Contributions
+
+If you would like to contribute to this repository, please...
+
+1. 👓 Read the [contribution guidelines](CONTRIBUTING.md).
+2. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [fork](https://github.com/StylishThemes/GitHub-FixedHeader/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png)
+[Download](https://github.com/StylishThemes/GitHub-FixedHeader/archive/master.zip),
+3. 👌 Create a pull request!
+
+Thanks to all that have [contributed](AUTHORS) so far!
