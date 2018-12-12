@@ -24,6 +24,10 @@
     height: 40px !important;
     border-bottom: 1px solid #ddd;
   }
+  .gh-header .gh-header-sticky.is-stuck + .gh-header-shadow {
+    top: var(--height) !important;
+  }
+
   /* Fix github.com/orgs/:org/people "Select all" sub-header */
   .table-list-header.table-list-header-next.js-sticky.is-stuck {
     height: calc(var(--height) + 50px);
