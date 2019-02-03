@@ -18,11 +18,11 @@
   .is-stuck {
     padding-top: var(--height) !important;
   }
-  div.pr-toolbar.is-stuck+.pr-toolbar-shadow {
-    background: #fff;
-    top: var(--height) !important;
-    height: 40px !important;
-    border-bottom: 1px solid #ddd;
+  .pr-toolbar.is-stuck .diffbar {
+    background: #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 8px;
   }
   .gh-header .gh-header-sticky.is-stuck + .gh-header-shadow {
     top: var(--height) !important;
@@ -48,9 +48,6 @@
   .diff-view .file-info span.diffstat {
     top: -11px !important;
   }
-  div.is-stuck .diffbar {
-    margin-top: -12px !important;
-  }
   .diff-view .file-header {
     height: 40px !important;
   }
@@ -63,18 +60,14 @@
     top: 5px !important;
     right: 5px !important;
   }
-  /* Override GitHub-Dark settings */
-  div.diffbar {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-  }
+
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
     #files .file-header {
       position: sticky !important;
       position: -webkit-sticky !important;
-      top: 95px !important;
+      top: 110px !important;
       height: 40px !important;
       z-index: 6 !important;
     }
