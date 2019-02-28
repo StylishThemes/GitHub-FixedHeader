@@ -18,7 +18,8 @@
   .is-stuck {
     padding-top: var(--height) !important;
   }
-  body.logged-out:not(.f4) {
+  body.logged-out:not(.f4),
+  body.session-authentication {
     padding-top: 89px !important;
   }
   .pr-toolbar.is-stuck .diffbar {
