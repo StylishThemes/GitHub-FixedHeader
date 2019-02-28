@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        GitHub Fixed Header
-@version     1.2.6
+@version     1.2.7
 @description Add a pinned header on GitHub
 @namespace   github.com/StylishThemes
 @author      StylishThemes <https://github.com/StylishThemes>
@@ -17,6 +17,9 @@
   /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
   .is-stuck {
     padding-top: var(--height) !important;
+  }
+  body.logged-out {
+    padding-top: 89px !important;
   }
   .pr-toolbar.is-stuck .diffbar {
     background: #ddd;
