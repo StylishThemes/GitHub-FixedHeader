@@ -135,6 +135,14 @@
     width: 100% !important;
     z-index: 1000 !important;
   }
+  /* logged out header */
+  .header-logged-out {
+    height: 61px !important;
+    padding: 12px 0 !important;
+  }
+  .header-logged-out .container-lg {
+    height: 33px !important;
+  }
   /*
    * GitHub Notifications Dropdown userscript tweak
    * https://openuserjs.org/scripts/joeytwiddle/Github_Notifications_Dropdown
