@@ -124,9 +124,13 @@
   /* .site-header = not-logged-in (removed 22 Aug 2017) */
   .site-header,
   /* .Header = (changed from .header) both logged in and not,
-  * added on 22 Aug 2017
+   * added on 22 Aug 2017
    */
   .Header,
+  /* .Header => .Header-old (changed ~18 March 2019),
+   * added .js-header-wrapper because it's the parent of .Header-old
+   */
+  .js-header-wrapper, .Header-old,
   /* #com #header = help.github.com */
   #com #header {
     position: fixed !important;
