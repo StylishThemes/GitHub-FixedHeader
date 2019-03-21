@@ -65,11 +65,6 @@
     top: 5px !important;
     right: 5px !important;
   }
-  /* fix diff view content shifting */
-  .file-header + .Details-content--hidden .data {
-    overflow-x: unset !important;
-  }
-  
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
