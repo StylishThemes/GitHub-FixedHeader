@@ -52,7 +52,8 @@
   .diff-view .file-info span.diffstat {
     top: -11px !important;
   }
-  .diff-view .file-header {
+  .diff-view .file-header,
+  .header-logged-out {
     height: 40px !important;
   }
   .diff-view .file-info {
@@ -68,7 +69,7 @@
   .file-header + .Details-content--hidden .data {
     overflow-x: unset !important;
   }
-
+  
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
   @supports (position: sticky) {
@@ -134,14 +135,6 @@
     right: 0 !important;
     width: 100% !important;
     z-index: 1000 !important;
-  }
-  /* logged out header */
-  .header-logged-out {
-    height: 61px !important;
-    padding: 12px 0 !important;
-  }
-  .header-logged-out .container-lg {
-    height: 33px !important;
   }
   /*
    * GitHub Notifications Dropdown userscript tweak
