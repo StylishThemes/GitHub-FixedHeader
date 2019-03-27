@@ -6,6 +6,7 @@
 @author      StylishThemes <https://github.com/StylishThemes>
 @homepageURL https://github.com/StylishThemes/GitHub-FixedHeader
 @supportURL  https://github.com/StylishThemes/GitHub-FixedHeader/issues
+@updateURL   https://github.com/StylishThemes/GitHub-FixedHeader/raw/master/github-fixed-header.user.css
 @license     CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
