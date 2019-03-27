@@ -10,7 +10,7 @@
     "eslint-config-silverwind": "^2.1.0",
     "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
-    "semver": "^5.6.0",
+    "semver": "^6.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "updates": "^7.2.1"
