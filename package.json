@@ -6,14 +6,14 @@
   "license": "CC-BY-SA-4.0",
   "main": "github-fixed-header.user.css",
   "devDependencies": {
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-silverwind": "^2.1.0",
     "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
     "semver": "^6.0.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
-    "updates": "^7.2.1"
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.1"
   },
   "scripts": {
     "authors": "bash tools/authors",
