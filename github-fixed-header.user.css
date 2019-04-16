@@ -33,6 +33,10 @@
     top: var(--height) !important;
   }
 
+  /* Fix code block shift when sticky */
+  .highlight[style*="overflow-x"] {
+    overflow-x: unset !important;
+  }
   /* Fix github.com/orgs/:org/people "Select all" sub-header */
   .table-list-header.table-list-header-next.js-sticky.is-stuck {
     height: calc(var(--height) + 50px);
