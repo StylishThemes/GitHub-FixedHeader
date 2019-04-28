@@ -12,7 +12,7 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
   /* AGENT_SHEET */
   :root {
-    --height: 57px;
+    --height: 65px;
   }
   body:not(.project-full-screen),
   /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
@@ -41,34 +41,16 @@
   .table-list-header.table-list-header-next.js-sticky.is-stuck {
     height: calc(var(--height) + 50px);
   }
-  /* Fix long file name wrapping */
-  .diff-view .file-info a {
-    text-overflow: ellipsis;
-    max-width: 490px;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-  }
   /* Fix breaking floats */
   .file-header:before {
     clear: both;
   }
   /* Fixes other misalignment of headers */
-  .diff-view .file-info span.diffstat {
-    top: -11px !important;
-  }
-  .diff-view .file-header,
-  .header-logged-out {
+  .diff-view .file-header {
     height: 40px !important;
   }
-  .diff-view .file-info {
-    position: absolute;
-    top: 4px !important;
-  }
-  .diff-view .file-actions {
-    position: absolute;
-    top: 5px !important;
-    right: 5px !important;
+  .header-logged-out {
+    height: var(--height) !important;
   }
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
