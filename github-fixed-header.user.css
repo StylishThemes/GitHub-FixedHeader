@@ -13,6 +13,7 @@
   /* AGENT_SHEET */
   :root {
     --height: 65px;
+    --secondary-height: 40px;
   }
   body:not(.project-full-screen),
   /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
@@ -21,7 +22,7 @@
   }
   body.logged-out:not(.f4),
   body.session-authentication {
-    padding-top: 89px !important;
+    padding-top: var(--height) !important;
   }
   .pr-toolbar.is-stuck .diffbar {
     background: #ddd;
@@ -47,10 +48,15 @@
   }
   /* Fixes other misalignment of headers */
   .diff-view .file-header {
-    height: 40px !important;
+    height: var(--secondary-height) !important;
   }
   .header-logged-out {
     height: var(--height) !important;
+  }
+  .is-stuck ~ #files .file-actions,
+  .is-stuck ~ #files .file-info {
+    position: relative;
+    top: calc(var(--secondary-height) * -1);
   }
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
