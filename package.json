@@ -5,10 +5,12 @@
   "description": "Add a pinned header on GitHub",
   "license": "CC-BY-SA-4.0",
   "main": "github-fixed-header.user.css",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^3.0.2",
-    "fs-extra": "^8.0.1",
     "perfectionist": "^2.4.0",
     "semver": "^6.1.0",
     "stylelint": "^10.0.1",
