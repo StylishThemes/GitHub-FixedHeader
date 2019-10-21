@@ -56,7 +56,6 @@
   .is-stuck ~ #files .file-actions,
   .is-stuck ~ #files .file-info {
     position: relative;
-    top: calc(var(--secondary-height) * -1);
   }
   /* make diff file header sticky under the toolbar & main header;
    * modified from Refined GitHub extension */
@@ -65,6 +64,7 @@
       position: sticky !important;
       position: -webkit-sticky !important;
       top: 110px !important;
+      width: 100% !important;
       height: 40px !important;
       z-index: 6 !important;
     }
