@@ -132,7 +132,7 @@
    * GitHub Notifications Dropdown userscript tweak
    * https://openuserjs.org/scripts/joeytwiddle/Github_Notifications_Dropdown
    */
-  .notifications-dropdown {
+  .notifications-dropdown, .Popover {
     z-index: 1001 !important;
   }
   /* Octotree side panel open - see #6 */
