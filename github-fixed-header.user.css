@@ -68,6 +68,9 @@
       height: 40px !important;
       z-index: 6 !important;
     }
+    #files .file-header.has-open-dropdown {
+      z-index: 10 !important;
+    }
   }
   /* user page bar now appears under fixed header */
   .user-profile-sticky-bar:after, div.discussion-sidebar, div.blog-aside {
