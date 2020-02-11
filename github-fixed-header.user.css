@@ -33,7 +33,6 @@
   .gh-header .gh-header-sticky.is-stuck + .gh-header-shadow {
     top: var(--height) !important;
   }
-
   /* Fix code block shift when sticky */
   .highlight[style*="overflow-x"] {
     overflow-x: unset !important;

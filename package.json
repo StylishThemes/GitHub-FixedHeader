@@ -26,7 +26,7 @@
     "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
     "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
     "perfectionist": "perfectionist github-fixed-header.user.css github-fixed-header.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --silent --color -- github-fixed-header.user.css",
+    "stylelint": "stylelint github-fixed-header.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "updates -cu && npm install"
   }
