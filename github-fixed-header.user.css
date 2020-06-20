@@ -12,7 +12,7 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
   /* AGENT_SHEET */
   :root {
-    --height: 65px;
+    --height: 53px;
     --secondary-height: 40px;
   }
   body:not(.project-full-screen),
