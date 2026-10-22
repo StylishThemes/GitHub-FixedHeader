@@ -1,3 +1,5 @@
+**Retired:** this style no longer matches GitHub's current markup.
+
 # Github Fixed Header [![tag](https://img.shields.io/github/tag/StylishThemes/GitHub-FixedHeader.svg)](https://github.com/StylishThemes/GitHub-FixedHeader/tags)
 
 A simple userstyle to make the main header (or menu) of Github remain fixed at the top of the screen.
